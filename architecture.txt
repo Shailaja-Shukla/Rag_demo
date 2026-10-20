@@ -1,0 +1,27 @@
+building end to end rag pipeline 
+data insight 
+it has 6 cols 
+which have disney customer review
+data in present in data folder
+
+3 main components
+1)data ingestion 
+
+
+steps of data ingestion 
+data load :- load data from csv , which is present in data folder 
+chunking :- its a table format data , so chunking will always have col names in each chunk , 
+embedding use config.env for embedding model 
+create a new index in chroma db , and upload the embedding along with meta data , for ciatation metada data is required
+
+2)query retrieval 
+I want a planner agent which can divide the query into subqueries , which chroam db can understand 
+data can be retrieved from metada data as well as text data 
+get all the relevent chunk rerank them and then combine all and generate answer 
+
+3)web page with flask 
+good Ui
+one button for data ingesation 
+user series of q and a 
+
+env :- /Users/devmanisingh/Desktop/env/demoenv/bin/activate
